@@ -1,0 +1,69 @@
+\hypertarget{interface_transport_table_view_controller}{}\section{Transport\+Table\+View\+Controller Class Reference}
+\label{interface_transport_table_view_controller}\index{Transport\+Table\+View\+Controller@{Transport\+Table\+View\+Controller}}
+Inheritance diagram for Transport\+Table\+View\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.975309cm]{interface_transport_table_view_controller}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(I\+B\+Action) -\/ \hyperlink{interface_transport_table_view_controller_a73427941afd3f5313a888f666678255c}{sort\+Button\+Pressed\+:}
+\end{DoxyCompactItemize}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(U\+I\+Navigation\+Controller $\ast$) + \hyperlink{interface_transport_table_view_controller_a9d077e63ddb1f5ee89e70442d2ab540b}{create\+From\+Nib}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+I\+B\+Outlet U\+I\+Table\+View $\ast$ \hyperlink{interface_transport_table_view_controller_a1785d3e6d819f19e324774d783e4019f}{table\+View}
+\item 
+Transport\+Type \hyperlink{interface_transport_table_view_controller_a30bd421cf096f28dff64432e92b0008e}{transport\+Type}
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\index{Transport\+Table\+View\+Controller@{Transport\+Table\+View\+Controller}!create\+From\+Nib@{create\+From\+Nib}}
+\index{create\+From\+Nib@{create\+From\+Nib}!Transport\+Table\+View\+Controller@{Transport\+Table\+View\+Controller}}
+\subsubsection[{\texorpdfstring{create\+From\+Nib()}{createFromNib()}}]{\setlength{\rightskip}{0pt plus 5cm}+ (U\+I\+Navigation\+Controller $\ast$) create\+From\+Nib 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\hypertarget{interface_transport_table_view_controller_a9d077e63ddb1f5ee89e70442d2ab540b}{}\label{interface_transport_table_view_controller_a9d077e63ddb1f5ee89e70442d2ab540b}
+Factory method for the creation of This view controller
+
+\begin{DoxyReturn}{Returns}
+U\+I\+Navigation\+Controller with an instance of this view controller as its root view controller. 
+\end{DoxyReturn}
+\index{Transport\+Table\+View\+Controller@{Transport\+Table\+View\+Controller}!sort\+Button\+Pressed\+:@{sort\+Button\+Pressed\+:}}
+\index{sort\+Button\+Pressed\+:@{sort\+Button\+Pressed\+:}!Transport\+Table\+View\+Controller@{Transport\+Table\+View\+Controller}}
+\subsubsection[{\texorpdfstring{sort\+Button\+Pressed\+:(id sender)}{sortButtonPressed:(id sender)}}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\+B\+Action) sort\+Button\+Pressed\+: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}\hypertarget{interface_transport_table_view_controller_a73427941afd3f5313a888f666678255c}{}\label{interface_transport_table_view_controller_a73427941afd3f5313a888f666678255c}
+Button Handler on Press of sorting Button
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & U\+I\+Bar\+Button\+Item, Sort\+Button on navigation bar \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Property Documentation}
+\index{Transport\+Table\+View\+Controller@{Transport\+Table\+View\+Controller}!table\+View@{table\+View}}
+\index{table\+View@{table\+View}!Transport\+Table\+View\+Controller@{Transport\+Table\+View\+Controller}}
+\subsubsection[{\texorpdfstring{table\+View}{tableView}}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\+B\+Outlet U\+I\+Table\+View$\ast$) table\+View\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [retain]}}\hypertarget{interface_transport_table_view_controller_a1785d3e6d819f19e324774d783e4019f}{}\label{interface_transport_table_view_controller_a1785d3e6d819f19e324774d783e4019f}
+Table\+View property hooked upto the storyboard. This table view lists all the transport data \index{Transport\+Table\+View\+Controller@{Transport\+Table\+View\+Controller}!transport\+Type@{transport\+Type}}
+\index{transport\+Type@{transport\+Type}!Transport\+Table\+View\+Controller@{Transport\+Table\+View\+Controller}}
+\subsubsection[{\texorpdfstring{transport\+Type}{transportType}}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (Transport\+Type) transport\+Type\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\hypertarget{interface_transport_table_view_controller_a30bd421cf096f28dff64432e92b0008e}{}\label{interface_transport_table_view_controller_a30bd421cf096f28dff64432e92b0008e}
+Property holding the transport type. Transport type can be train, bus or flight 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Transport\+Table\+View\+Controller.\+h\item 
+Transport\+Table\+View\+Controller.\+m\end{DoxyCompactItemize}

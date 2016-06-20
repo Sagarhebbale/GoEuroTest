@@ -1,0 +1,174 @@
+\hypertarget{interface_datasource}{}\section{Datasource Class Reference}
+\label{interface_datasource}\index{Datasource@{Datasource}}
+Inheritance diagram for Datasource\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_datasource}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_datasource_ac523e4cdc13430a1ab68e0525ccaef79}{init}
+\item 
+(void) -\/ \hyperlink{interface_datasource_ac3c15b8e842a6700d62ea7def496038b}{init\+Location\+Manager\+:}
+\item 
+(B\+O\+OL) -\/ \hyperlink{interface_datasource_adf2c40655c8b7b5d93478ea9f5c76091}{is\+Location\+Manager\+Initialized}
+\item 
+(void) -\/ \hyperlink{interface_datasource_a86113ddacf8e85d6f76ba872b85c6902}{get\+Place\+Objects\+:with\+Callback\+:}
+\item 
+(void) -\/ \hyperlink{interface_datasource_ae859d7559a81b9aec7dddc41acd07809}{get\+Transport\+Data\+For\+Transport\+Type\+:for\+Callbacl\+:}
+\item 
+(N\+S\+Array $\ast$) -\/ \hyperlink{interface_datasource_af9b552f35567d99cb2db5b7984937737}{get\+Transport\+Models\+From\+Local\+Store\+:}
+\item 
+(N\+S\+Array $\ast$) -\/ \hyperlink{interface_datasource_a5f02aea01c5a3faf9f57cd4ec991df55}{get\+Sorted\+Transport\+Models\+From\+Local\+Store\+:\+Ascending\+:}
+\end{DoxyCompactItemize}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{interface_datasource}{Datasource} $\ast$) + \hyperlink{interface_datasource_a661d0b75643bedaaae990ebc22a2f78a}{get\+Instance}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+C\+L\+Location $\ast$ \hyperlink{interface_datasource_ac4e466cbb47cc7ff9529aa074563be46}{last\+Location}
+\item 
+float \hyperlink{interface_datasource_a7d43597bc00ede549bf34a4969ab8d6e}{max\+Distance}
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\index{Datasource@{Datasource}!get\+Instance@{get\+Instance}}
+\index{get\+Instance@{get\+Instance}!Datasource@{Datasource}}
+\subsubsection[{\texorpdfstring{get\+Instance()}{getInstance()}}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf Datasource} $\ast$) get\+Instance 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\hypertarget{interface_datasource_a661d0b75643bedaaae990ebc22a2f78a}{}\label{interface_datasource_a661d0b75643bedaaae990ebc22a2f78a}
+Singleton access method
+
+\begin{DoxyReturn}{Returns}
+A shared single instance of this \hyperlink{interface_datasource}{Datasource} Class 
+\end{DoxyReturn}
+\index{Datasource@{Datasource}!get\+Place\+Objects\+:with\+Callback\+:@{get\+Place\+Objects\+:with\+Callback\+:}}
+\index{get\+Place\+Objects\+:with\+Callback\+:@{get\+Place\+Objects\+:with\+Callback\+:}!Datasource@{Datasource}}
+\subsubsection[{\texorpdfstring{get\+Place\+Objects\+:with\+Callback\+:(\+N\+S\+String $\ast$term,[with\+Callback] Place\+Loading\+Call\+Back Callback)}{getPlaceObjects:withCallback:(NSString *term,[withCallback] PlaceLoadingCallBack Callback)}}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) get\+Place\+Objects\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{term}
+\item[{withCallback:(Place\+Loading\+Call\+Back)}]{Callback}
+\end{DoxyParamCaption}
+}\hypertarget{interface_datasource_a86113ddacf8e85d6f76ba872b85c6902}{}\label{interface_datasource_a86113ddacf8e85d6f76ba872b85c6902}
+Query method to get place objects. This class checks for a local copy of the place objects and queries it remotley only if the local copies are absent
+
+
+\begin{DoxyParams}{Parameters}
+{\em term} & The search term passed while qurying for a place \\
+\hline
+{\em Callback} & Asynchronous callback as a Place\+Loaing\+Call\+Back structure. \\
+\hline
+\end{DoxyParams}
+\index{Datasource@{Datasource}!get\+Sorted\+Transport\+Models\+From\+Local\+Store\+:\+Ascending\+:@{get\+Sorted\+Transport\+Models\+From\+Local\+Store\+:\+Ascending\+:}}
+\index{get\+Sorted\+Transport\+Models\+From\+Local\+Store\+:\+Ascending\+:@{get\+Sorted\+Transport\+Models\+From\+Local\+Store\+:\+Ascending\+:}!Datasource@{Datasource}}
+\subsubsection[{\texorpdfstring{get\+Sorted\+Transport\+Models\+From\+Local\+Store\+:\+Ascending\+:(\+Transport\+Type type,[Ascending] B\+O\+O\+L is\+Ascending)}{getSortedTransportModelsFromLocalStore:Ascending:(TransportType type,[Ascending] BOOL isAscending)}}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Array $\ast$) get\+Sorted\+Transport\+Models\+From\+Local\+Store\+: 
+\begin{DoxyParamCaption}
+\item[{(Transport\+Type)}]{type}
+\item[{Ascending:(B\+O\+OL)}]{is\+Ascending}
+\end{DoxyParamCaption}
+}\hypertarget{interface_datasource_a5f02aea01c5a3faf9f57cd4ec991df55}{}\label{interface_datasource_a5f02aea01c5a3faf9f57cd4ec991df55}
+Method to sort by price and query locally for transport models
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & The transport type to be passed for the concerning transport models \\
+\hline
+{\em is\+Ascending} & Bool parameter to state how he sorting should be done (Ascending/\+Descending)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+N\+S\+Array of all transport models sorted by Price 
+\end{DoxyReturn}
+\index{Datasource@{Datasource}!get\+Transport\+Data\+For\+Transport\+Type\+:for\+Callbacl\+:@{get\+Transport\+Data\+For\+Transport\+Type\+:for\+Callbacl\+:}}
+\index{get\+Transport\+Data\+For\+Transport\+Type\+:for\+Callbacl\+:@{get\+Transport\+Data\+For\+Transport\+Type\+:for\+Callbacl\+:}!Datasource@{Datasource}}
+\subsubsection[{\texorpdfstring{get\+Transport\+Data\+For\+Transport\+Type\+:for\+Callbacl\+:(\+Transport\+Type type,[for\+Callbacl] Transport\+Data\+Loading\+Call\+Back callback)}{getTransportDataForTransportType:forCallbacl:(TransportType type,[forCallbacl] TransportDataLoadingCallBack callback)}}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) get\+Transport\+Data\+For\+Transport\+Type\+: 
+\begin{DoxyParamCaption}
+\item[{(Transport\+Type)}]{type}
+\item[{forCallbacl:(Transport\+Data\+Loading\+Call\+Back)}]{callback}
+\end{DoxyParamCaption}
+}\hypertarget{interface_datasource_ae859d7559a81b9aec7dddc41acd07809}{}\label{interface_datasource_ae859d7559a81b9aec7dddc41acd07809}
+Query method to get transport models. 
+\begin{DoxyParams}{Parameters}
+{\em type} & The transport type passed so that a query may be made to the appropriate transport type \\
+\hline
+{\em Callback} & Asynchronous callback as a Transport\+Loading\+Callback structure. \\
+\hline
+\end{DoxyParams}
+\index{Datasource@{Datasource}!get\+Transport\+Models\+From\+Local\+Store\+:@{get\+Transport\+Models\+From\+Local\+Store\+:}}
+\index{get\+Transport\+Models\+From\+Local\+Store\+:@{get\+Transport\+Models\+From\+Local\+Store\+:}!Datasource@{Datasource}}
+\subsubsection[{\texorpdfstring{get\+Transport\+Models\+From\+Local\+Store\+:(\+Transport\+Type type)}{getTransportModelsFromLocalStore:(TransportType type)}}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Array $\ast$) get\+Transport\+Models\+From\+Local\+Store\+: 
+\begin{DoxyParamCaption}
+\item[{(Transport\+Type)}]{type}
+\end{DoxyParamCaption}
+}\hypertarget{interface_datasource_af9b552f35567d99cb2db5b7984937737}{}\label{interface_datasource_af9b552f35567d99cb2db5b7984937737}
+Method to do a purley local query of all transport models
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & The transport type to be passed for the concerning transport models\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+N\+S\+Array of all transport models for a certain transport type 
+\end{DoxyReturn}
+\index{Datasource@{Datasource}!init@{init}}
+\index{init@{init}!Datasource@{Datasource}}
+\subsubsection[{\texorpdfstring{init()}{init()}}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\hypertarget{interface_datasource_ac523e4cdc13430a1ab68e0525ccaef79}{}\label{interface_datasource_ac523e4cdc13430a1ab68e0525ccaef79}
+Initialize method
+
+\begin{DoxyReturn}{Returns}
+Way to configure and initialize this class 
+\end{DoxyReturn}
+\index{Datasource@{Datasource}!init\+Location\+Manager\+:@{init\+Location\+Manager\+:}}
+\index{init\+Location\+Manager\+:@{init\+Location\+Manager\+:}!Datasource@{Datasource}}
+\subsubsection[{\texorpdfstring{init\+Location\+Manager\+:(\+Location\+Loading\+Call\+Back location\+Load\+Callback)}{initLocationManager:(LocationLoadingCallBack locationLoadCallback)}}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) init\+Location\+Manager\+: 
+\begin{DoxyParamCaption}
+\item[{(Location\+Loading\+Call\+Back)}]{location\+Load\+Callback}
+\end{DoxyParamCaption}
+}\hypertarget{interface_datasource_ac3c15b8e842a6700d62ea7def496038b}{}\label{interface_datasource_ac3c15b8e842a6700d62ea7def496038b}
+Methiod to Initialize location manager and get last updated location
+
+
+\begin{DoxyParams}{Parameters}
+{\em location\+Load\+Callback} & Last updated location as an asynchronous callback \\
+\hline
+\end{DoxyParams}
+\index{Datasource@{Datasource}!is\+Location\+Manager\+Initialized@{is\+Location\+Manager\+Initialized}}
+\index{is\+Location\+Manager\+Initialized@{is\+Location\+Manager\+Initialized}!Datasource@{Datasource}}
+\subsubsection[{\texorpdfstring{is\+Location\+Manager\+Initialized()}{isLocationManagerInitialized()}}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+OL) is\+Location\+Manager\+Initialized 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\hypertarget{interface_datasource_adf2c40655c8b7b5d93478ea9f5c76091}{}\label{interface_datasource_adf2c40655c8b7b5d93478ea9f5c76091}
+Methiod to query if the location manager has been started
+
+\begin{DoxyReturn}{Returns}
+Yes if location manager has been staretd. No otherwise 
+\end{DoxyReturn}
+
+
+\subsection{Property Documentation}
+\index{Datasource@{Datasource}!last\+Location@{last\+Location}}
+\index{last\+Location@{last\+Location}!Datasource@{Datasource}}
+\subsubsection[{\texorpdfstring{last\+Location}{lastLocation}}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\+L\+Location$\ast$) last\+Location\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [retain]}}\hypertarget{interface_datasource_ac4e466cbb47cc7ff9529aa074563be46}{}\label{interface_datasource_ac4e466cbb47cc7ff9529aa074563be46}
+Last location property with the last updated location of the user \index{Datasource@{Datasource}!max\+Distance@{max\+Distance}}
+\index{max\+Distance@{max\+Distance}!Datasource@{Datasource}}
+\subsubsection[{\texorpdfstring{max\+Distance}{maxDistance}}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (float) max\+Distance\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\hypertarget{interface_datasource_a7d43597bc00ede549bf34a4969ab8d6e}{}\label{interface_datasource_a7d43597bc00ede549bf34a4969ab8d6e}
+Max distance for the furtherest place from the users location to all queried places. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Datasource.\+h\item 
+Datasource.\+m\end{DoxyCompactItemize}

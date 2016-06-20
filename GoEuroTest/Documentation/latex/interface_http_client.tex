@@ -1,0 +1,89 @@
+\hypertarget{interface_http_client}{}\section{Http\+Client Class Reference}
+\label{interface_http_client}\index{Http\+Client@{Http\+Client}}
+Inheritance diagram for Http\+Client\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_http_client}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_http_client_affc1449c6257c5f64c865b0f33e4260b}{init}
+\item 
+(void) -\/ \hyperlink{interface_http_client_ad3c4c978982a3116a22907a60678ced9}{get\+Places\+For\+Term\+:with\+Callback\+:}
+\item 
+(void) -\/ \hyperlink{interface_http_client_a796f556a0aa18ba9689f3cfbdaba94d8}{get\+Transport\+Data\+For\+Url\+:\+With\+Callback\+:}
+\end{DoxyCompactItemize}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{interface_http_client}{Http\+Client} $\ast$) + \hyperlink{interface_http_client_a4e15a6475fad76c73c7fac6738167957}{get\+Instance}
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\index{Http\+Client@{Http\+Client}!get\+Instance@{get\+Instance}}
+\index{get\+Instance@{get\+Instance}!Http\+Client@{Http\+Client}}
+\subsubsection[{\texorpdfstring{get\+Instance()}{getInstance()}}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf Http\+Client} $\ast$) get\+Instance 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\hypertarget{interface_http_client_a4e15a6475fad76c73c7fac6738167957}{}\label{interface_http_client_a4e15a6475fad76c73c7fac6738167957}
+Singleton Access Method
+
+\begin{DoxyReturn}{Returns}
+Single shared instance of the \hyperlink{interface_http_client}{Http\+Client} class 
+\end{DoxyReturn}
+\index{Http\+Client@{Http\+Client}!get\+Places\+For\+Term\+:with\+Callback\+:@{get\+Places\+For\+Term\+:with\+Callback\+:}}
+\index{get\+Places\+For\+Term\+:with\+Callback\+:@{get\+Places\+For\+Term\+:with\+Callback\+:}!Http\+Client@{Http\+Client}}
+\subsubsection[{\texorpdfstring{get\+Places\+For\+Term\+:with\+Callback\+:(\+N\+S\+String $\ast$term,[with\+Callback] Http\+Client\+Callback Callback)}{getPlacesForTerm:withCallback:(NSString *term,[withCallback] HttpClientCallback Callback)}}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) get\+Places\+For\+Term\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{term}
+\item[{withCallback:(Http\+Client\+Callback)}]{Callback}
+\end{DoxyParamCaption}
+}\hypertarget{interface_http_client_ad3c4c978982a3116a22907a60678ced9}{}\label{interface_http_client_ad3c4c978982a3116a22907a60678ced9}
+Method to remotley query for Place\+Objects for a search term
+
+
+\begin{DoxyParams}{Parameters}
+{\em term} & Passed search term based on which places are loaded \\
+\hline
+{\em Callback} & Asynchronous callback block as Http\+Client\+Callback called after the respose is loaded. \\
+\hline
+\end{DoxyParams}
+\index{Http\+Client@{Http\+Client}!get\+Transport\+Data\+For\+Url\+:\+With\+Callback\+:@{get\+Transport\+Data\+For\+Url\+:\+With\+Callback\+:}}
+\index{get\+Transport\+Data\+For\+Url\+:\+With\+Callback\+:@{get\+Transport\+Data\+For\+Url\+:\+With\+Callback\+:}!Http\+Client@{Http\+Client}}
+\subsubsection[{\texorpdfstring{get\+Transport\+Data\+For\+Url\+:\+With\+Callback\+:(\+N\+S\+String $\ast$url,[With\+Callback] Http\+Client\+Callback Callback)}{getTransportDataForUrl:WithCallback:(NSString *url,[WithCallback] HttpClientCallback Callback)}}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) get\+Transport\+Data\+For\+Url\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{url}
+\item[{WithCallback:(Http\+Client\+Callback)}]{Callback}
+\end{DoxyParamCaption}
+}\hypertarget{interface_http_client_a796f556a0aa18ba9689f3cfbdaba94d8}{}\label{interface_http_client_a796f556a0aa18ba9689f3cfbdaba94d8}
+Method to remotley query for Transport\+Models
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & The remote U\+RL source to load the transport model \\
+\hline
+{\em Callback} & Asynchronous callback block as Http\+Client\+Callback called after the respose is loaded. \\
+\hline
+\end{DoxyParams}
+\index{Http\+Client@{Http\+Client}!init@{init}}
+\index{init@{init}!Http\+Client@{Http\+Client}}
+\subsubsection[{\texorpdfstring{init()}{init()}}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\hypertarget{interface_http_client_affc1449c6257c5f64c865b0f33e4260b}{}\label{interface_http_client_affc1449c6257c5f64c865b0f33e4260b}
+Method to initialize and configure \hyperlink{interface_http_client}{Http\+Client}
+
+\begin{DoxyReturn}{Returns}
+Configured and initialied \hyperlink{interface_http_client}{Http\+Client} class 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Http\+Client.\+h\item 
+Http\+Client.\+m\end{DoxyCompactItemize}

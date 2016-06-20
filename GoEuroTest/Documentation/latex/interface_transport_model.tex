@@ -1,0 +1,158 @@
+\hypertarget{interface_transport_model}{}\section{Transport\+Model Class Reference}
+\label{interface_transport_model}\index{Transport\+Model@{Transport\+Model}}
+Inheritance diagram for Transport\+Model\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_transport_model}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(N\+S\+Attributed\+String $\ast$) -\/ \hyperlink{interface_transport_model_a25724cdc8e6c33c46125957d1541c9ca}{price\+Attributed\+String}
+\item 
+(N\+S\+String $\ast$) -\/ \hyperlink{interface_transport_model_a5636caa4f2f470b12e06abb5fb71abd8}{times\+String}
+\item 
+(N\+S\+String $\ast$) -\/ \hyperlink{interface_transport_model_adac7ca4642f31f96ef586fa268a9e6e2}{duration\+String}
+\item 
+(N\+S\+String $\ast$) -\/ \hyperlink{interface_transport_model_a631f9f2293d18fe5c311ba5be0d49dce}{logo\+Url\+String}
+\end{DoxyCompactItemize}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(N\+S\+String $\ast$) + \hyperlink{interface_transport_model_acfded3dc03dec0be05ae3d9d44eaba74}{url\+For\+Transport\+Type\+:}
+\item 
+(N\+S\+String $\ast$) + \hyperlink{interface_transport_model_af72dbb3813ea000fe2a67221690d6b47}{title\+For\+Transport\+Type\+:}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Transport\+Type \hyperlink{interface_transport_model_a5d4580718dd9fedaf751f86219b657bd}{transport\+Type}
+\item 
+N\+S\+Number $\ast$ \hyperlink{interface_transport_model_a81a3d5264f0ac295ea5ff98f85f5172a}{number\+Of\+Stops}
+\item 
+float \hyperlink{interface_transport_model_aa756852caf3b4c7fdc98365e3aac39e8}{price\+In\+Euro}
+\item 
+N\+S\+String $\ast$ \hyperlink{interface_transport_model_a3a1135bb3c34dbd31fe7d6a6a329525e}{guid}
+\item 
+N\+S\+String $\ast$ \hyperlink{interface_transport_model_a2ec564526223b8cfdc249b2ee67d2740}{logo\+Url}
+\item 
+N\+S\+String $\ast$ \hyperlink{interface_transport_model_ac4604d8d548b906e8ab95e3d128c849f}{departure\+Time}
+\item 
+N\+S\+String $\ast$ \hyperlink{interface_transport_model_ad39126b328fba5e2eaff6ac49bbeeba0}{arrival\+Time}
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\index{Transport\+Model@{Transport\+Model}!duration\+String@{duration\+String}}
+\index{duration\+String@{duration\+String}!Transport\+Model@{Transport\+Model}}
+\subsubsection[{\texorpdfstring{duration\+String()}{durationString()}}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String $\ast$) duration\+String 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\hypertarget{interface_transport_model_adac7ca4642f31f96ef586fa268a9e6e2}{}\label{interface_transport_model_adac7ca4642f31f96ef586fa268a9e6e2}
+Method to return duration of travel of this transport offer
+
+\begin{DoxyReturn}{Returns}
+Returns duration in Hours\+:Minutes between arrrival and departure time 
+\end{DoxyReturn}
+\index{Transport\+Model@{Transport\+Model}!logo\+Url\+String@{logo\+Url\+String}}
+\index{logo\+Url\+String@{logo\+Url\+String}!Transport\+Model@{Transport\+Model}}
+\subsubsection[{\texorpdfstring{logo\+Url\+String()}{logoUrlString()}}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String $\ast$) logo\+Url\+String 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\hypertarget{interface_transport_model_a631f9f2293d18fe5c311ba5be0d49dce}{}\label{interface_transport_model_a631f9f2293d18fe5c311ba5be0d49dce}
+Method to return Complete logo url of the remote source for the logo of the offer provider
+
+\begin{DoxyReturn}{Returns}
+Remote url for the logo as a string 
+\end{DoxyReturn}
+\index{Transport\+Model@{Transport\+Model}!price\+Attributed\+String@{price\+Attributed\+String}}
+\index{price\+Attributed\+String@{price\+Attributed\+String}!Transport\+Model@{Transport\+Model}}
+\subsubsection[{\texorpdfstring{price\+Attributed\+String()}{priceAttributedString()}}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Attributed\+String $\ast$) price\+Attributed\+String 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\hypertarget{interface_transport_model_a25724cdc8e6c33c46125957d1541c9ca}{}\label{interface_transport_model_a25724cdc8e6c33c46125957d1541c9ca}
+Method to return a formated and styled string of the price of this transport model offer.
+
+\begin{DoxyReturn}{Returns}
+String of the price as N\+S\+Attributed\+String 
+\end{DoxyReturn}
+\index{Transport\+Model@{Transport\+Model}!times\+String@{times\+String}}
+\index{times\+String@{times\+String}!Transport\+Model@{Transport\+Model}}
+\subsubsection[{\texorpdfstring{times\+String()}{timesString()}}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String $\ast$) times\+String 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\hypertarget{interface_transport_model_a5636caa4f2f470b12e06abb5fb71abd8}{}\label{interface_transport_model_a5636caa4f2f470b12e06abb5fb71abd8}
+Method to return formatted string for arrival and departure time
+
+\begin{DoxyReturn}{Returns}
+Return strind as Departure\+Date\+:Arrival\+Date 
+\end{DoxyReturn}
+\index{Transport\+Model@{Transport\+Model}!title\+For\+Transport\+Type\+:@{title\+For\+Transport\+Type\+:}}
+\index{title\+For\+Transport\+Type\+:@{title\+For\+Transport\+Type\+:}!Transport\+Model@{Transport\+Model}}
+\subsubsection[{\texorpdfstring{title\+For\+Transport\+Type\+:(\+Transport\+Type type)}{titleForTransportType:(TransportType type)}}]{\setlength{\rightskip}{0pt plus 5cm}+ (N\+S\+String $\ast$) title\+For\+Transport\+Type\+: 
+\begin{DoxyParamCaption}
+\item[{(Transport\+Type)}]{type}
+\end{DoxyParamCaption}
+}\hypertarget{interface_transport_model_af72dbb3813ea000fe2a67221690d6b47}{}\label{interface_transport_model_af72dbb3813ea000fe2a67221690d6b47}
+Class method to return a title for a given ransport type
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & The transport Type as enumerated by the type Transport\+Type\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Title for the transport type as a string 
+\end{DoxyReturn}
+\index{Transport\+Model@{Transport\+Model}!url\+For\+Transport\+Type\+:@{url\+For\+Transport\+Type\+:}}
+\index{url\+For\+Transport\+Type\+:@{url\+For\+Transport\+Type\+:}!Transport\+Model@{Transport\+Model}}
+\subsubsection[{\texorpdfstring{url\+For\+Transport\+Type\+:(\+Transport\+Type type)}{urlForTransportType:(TransportType type)}}]{\setlength{\rightskip}{0pt plus 5cm}+ (N\+S\+String $\ast$) url\+For\+Transport\+Type\+: 
+\begin{DoxyParamCaption}
+\item[{(Transport\+Type)}]{type}
+\end{DoxyParamCaption}
+}\hypertarget{interface_transport_model_acfded3dc03dec0be05ae3d9d44eaba74}{}\label{interface_transport_model_acfded3dc03dec0be05ae3d9d44eaba74}
+Class method to return the remote url source for data of a certain transport type
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & The transport Type as enumerated by the type Transport\+Type\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The remote url as a string which can be used to get the transport data. 
+\end{DoxyReturn}
+
+
+\subsection{Property Documentation}
+\index{Transport\+Model@{Transport\+Model}!arrival\+Time@{arrival\+Time}}
+\index{arrival\+Time@{arrival\+Time}!Transport\+Model@{Transport\+Model}}
+\subsubsection[{\texorpdfstring{arrival\+Time}{arrivalTime}}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String$\ast$) arrival\+Time\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [retain]}}\hypertarget{interface_transport_model_ad39126b328fba5e2eaff6ac49bbeeba0}{}\label{interface_transport_model_ad39126b328fba5e2eaff6ac49bbeeba0}
+Property as a string holding the arrival time of this Transport offer. \index{Transport\+Model@{Transport\+Model}!departure\+Time@{departure\+Time}}
+\index{departure\+Time@{departure\+Time}!Transport\+Model@{Transport\+Model}}
+\subsubsection[{\texorpdfstring{departure\+Time}{departureTime}}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String$\ast$) departure\+Time\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [retain]}}\hypertarget{interface_transport_model_ac4604d8d548b906e8ab95e3d128c849f}{}\label{interface_transport_model_ac4604d8d548b906e8ab95e3d128c849f}
+Property as a string holding the departure time of this Transport offer. \index{Transport\+Model@{Transport\+Model}!guid@{guid}}
+\index{guid@{guid}!Transport\+Model@{Transport\+Model}}
+\subsubsection[{\texorpdfstring{guid}{guid}}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String$\ast$) guid\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [retain]}}\hypertarget{interface_transport_model_a3a1135bb3c34dbd31fe7d6a6a329525e}{}\label{interface_transport_model_a3a1135bb3c34dbd31fe7d6a6a329525e}
+Property as a string for the unique id of this transport offer \index{Transport\+Model@{Transport\+Model}!logo\+Url@{logo\+Url}}
+\index{logo\+Url@{logo\+Url}!Transport\+Model@{Transport\+Model}}
+\subsubsection[{\texorpdfstring{logo\+Url}{logoUrl}}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String$\ast$) logo\+Url\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [retain]}}\hypertarget{interface_transport_model_a2ec564526223b8cfdc249b2ee67d2740}{}\label{interface_transport_model_a2ec564526223b8cfdc249b2ee67d2740}
+Property for the remote url holding the logo image for the provider of this transport offer \index{Transport\+Model@{Transport\+Model}!number\+Of\+Stops@{number\+Of\+Stops}}
+\index{number\+Of\+Stops@{number\+Of\+Stops}!Transport\+Model@{Transport\+Model}}
+\subsubsection[{\texorpdfstring{number\+Of\+Stops}{numberOfStops}}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Number$\ast$) number\+Of\+Stops\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [retain]}}\hypertarget{interface_transport_model_a81a3d5264f0ac295ea5ff98f85f5172a}{}\label{interface_transport_model_a81a3d5264f0ac295ea5ff98f85f5172a}
+Property as a N\+S\+Number showing number of stops of this transport offer. \index{Transport\+Model@{Transport\+Model}!price\+In\+Euro@{price\+In\+Euro}}
+\index{price\+In\+Euro@{price\+In\+Euro}!Transport\+Model@{Transport\+Model}}
+\subsubsection[{\texorpdfstring{price\+In\+Euro}{priceInEuro}}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (float) price\+In\+Euro\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\hypertarget{interface_transport_model_aa756852caf3b4c7fdc98365e3aac39e8}{}\label{interface_transport_model_aa756852caf3b4c7fdc98365e3aac39e8}
+Property as a float showing price in euros for this transport offer \index{Transport\+Model@{Transport\+Model}!transport\+Type@{transport\+Type}}
+\index{transport\+Type@{transport\+Type}!Transport\+Model@{Transport\+Model}}
+\subsubsection[{\texorpdfstring{transport\+Type}{transportType}}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (Transport\+Type) transport\+Type\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\hypertarget{interface_transport_model_a5d4580718dd9fedaf751f86219b657bd}{}\label{interface_transport_model_a5d4580718dd9fedaf751f86219b657bd}
+Property for type of transport 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Transport\+Model.\+h\item 
+Transport\+Model.\+m\end{DoxyCompactItemize}

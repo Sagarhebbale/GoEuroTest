@@ -1,0 +1,168 @@
+\hypertarget{interface_place_object}{}\section{Place\+Object Class Reference}
+\label{interface_place_object}\index{Place\+Object@{Place\+Object}}
+
+
+{\ttfamily \#import $<$Place\+Object.\+h$>$}
+
+Inheritance diagram for Place\+Object\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_place_object}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(float) -\/ \hyperlink{interface_place_object_ae70795d19e922fa47c73e2ae5c56a3f1}{distance\+To\+:}
+\item 
+(float) -\/ \hyperlink{interface_place_object_af0f61112b3f32da19ad6fcb8ceb01250}{distance\+To\+Location\+:}
+\end{DoxyCompactItemize}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(N\+S\+Date\+Formatter $\ast$) + \hyperlink{interface_place_object_a8d9cb68c1b4f3059c051b022f6c672e0}{default\+Date\+Formatter}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+N\+S\+Number $\ast$ \hyperlink{interface_place_object_af018c73afed3d69e8b4e73399573292b}{guid}
+\item 
+N\+S\+String $\ast$ \hyperlink{interface_place_object_abf3f3dd0d2d7189755b09df41d332310}{name}
+\item 
+N\+S\+Number $\ast$ \hyperlink{interface_place_object_a6e60190f0f556c4cd990769720409262}{location\+ID}
+\item 
+N\+S\+Number $\ast$ \hyperlink{interface_place_object_a2c310e19df1c333e69ea623a07803159}{country\+ID}
+\item 
+N\+S\+Number $\ast$ \hyperlink{interface_place_object_a913be3e7487cc751bedf051efb200f0b}{distance}
+\item 
+N\+S\+String $\ast$ \hyperlink{interface_place_object_a9824d0bfb7028ed1e968ed6efe4614f4}{key}
+\item 
+N\+S\+String $\ast$ \hyperlink{interface_place_object_ad9712fd279caacdc1e6e859c789a8c89}{full\+Name}
+\item 
+N\+S\+String $\ast$ \hyperlink{interface_place_object_a08fa27864c0ab1622fd052775b78359e}{iata\+Airport\+Code}
+\item 
+N\+S\+String $\ast$ \hyperlink{interface_place_object_a4d1924fc2fb84097f452f47f66199661}{type}
+\item 
+N\+S\+String $\ast$ \hyperlink{interface_place_object_a51fc9bf5128ad1ae37c7f8520f2f8f4e}{country}
+\item 
+N\+S\+String $\ast$ \hyperlink{interface_place_object_ae97cadb12de29e5d532e7ebb17981cd0}{country\+Code}
+\item 
+N\+S\+Dictionary $\ast$ \hyperlink{interface_place_object_a29458bf7d479735b009bb5f3d72b24e5}{names\+In\+Languages}
+\item 
+N\+S\+Dictionary $\ast$ \hyperlink{interface_place_object_aadad1e36a7d18b4727d474392daaeef5}{alternative\+Names}
+\item 
+\hyperlink{interface_location_object}{Location\+Object} $\ast$ \hyperlink{interface_place_object_ab64dbbd07e30cb97604bfccb69bb6840}{geo\+Position}
+\item 
+B\+O\+OL \hyperlink{interface_place_object_adaa4d2067142d57960651197be872b6e}{in\+Europe}
+\item 
+B\+O\+OL \hyperlink{interface_place_object_a82afd62e7a54bcf853138961be0bdd4b}{core\+Country}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Place Object that encapsulates all the travel data of a place required for travel information.. 
+
+\subsection{Method Documentation}
+\index{Place\+Object@{Place\+Object}!default\+Date\+Formatter@{default\+Date\+Formatter}}
+\index{default\+Date\+Formatter@{default\+Date\+Formatter}!Place\+Object@{Place\+Object}}
+\subsubsection[{\texorpdfstring{default\+Date\+Formatter()}{defaultDateFormatter()}}]{\setlength{\rightskip}{0pt plus 5cm}+ (N\+S\+Date\+Formatter $\ast$) default\+Date\+Formatter 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\hypertarget{interface_place_object_a8d9cb68c1b4f3059c051b022f6c672e0}{}\label{interface_place_object_a8d9cb68c1b4f3059c051b022f6c672e0}
+factory to create and get default date formatter for the dates used by this object
+
+\begin{DoxyReturn}{Returns}
+Date formatter as N\+S\+Date\+Formatter 
+\end{DoxyReturn}
+\index{Place\+Object@{Place\+Object}!distance\+To\+:@{distance\+To\+:}}
+\index{distance\+To\+:@{distance\+To\+:}!Place\+Object@{Place\+Object}}
+\subsubsection[{\texorpdfstring{distance\+To\+:(\+Location\+Object $\ast$position)}{distanceTo:(LocationObject *position)}}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (float) distance\+To\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf Location\+Object} $\ast$)}]{position}
+\end{DoxyParamCaption}
+}\hypertarget{interface_place_object_ae70795d19e922fa47c73e2ae5c56a3f1}{}\label{interface_place_object_ae70795d19e922fa47c73e2ae5c56a3f1}
+Method to compute the distance of this place from a given location
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & From location using which the distance has to be computed\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Distance as a float 
+\end{DoxyReturn}
+\index{Place\+Object@{Place\+Object}!distance\+To\+Location\+:@{distance\+To\+Location\+:}}
+\index{distance\+To\+Location\+:@{distance\+To\+Location\+:}!Place\+Object@{Place\+Object}}
+\subsubsection[{\texorpdfstring{distance\+To\+Location\+:(\+C\+L\+Location $\ast$location)}{distanceToLocation:(CLLocation *location)}}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (float) distance\+To\+Location\+: 
+\begin{DoxyParamCaption}
+\item[{(C\+L\+Location $\ast$)}]{location}
+\end{DoxyParamCaption}
+}\hypertarget{interface_place_object_af0f61112b3f32da19ad6fcb8ceb01250}{}\label{interface_place_object_af0f61112b3f32da19ad6fcb8ceb01250}
+Method to compute the distance of this place from a given location
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & From location as a C\+L\+Location using which the distance has to be computed\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Distance as a float 
+\end{DoxyReturn}
+
+
+\subsection{Property Documentation}
+\index{Place\+Object@{Place\+Object}!alternative\+Names@{alternative\+Names}}
+\index{alternative\+Names@{alternative\+Names}!Place\+Object@{Place\+Object}}
+\subsubsection[{\texorpdfstring{alternative\+Names}{alternativeNames}}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Dictionary$\ast$) alternative\+Names\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [retain]}}\hypertarget{interface_place_object_aadad1e36a7d18b4727d474392daaeef5}{}\label{interface_place_object_aadad1e36a7d18b4727d474392daaeef5}
+Altrnative accepted names of this place \index{Place\+Object@{Place\+Object}!core\+Country@{core\+Country}}
+\index{core\+Country@{core\+Country}!Place\+Object@{Place\+Object}}
+\subsubsection[{\texorpdfstring{core\+Country}{coreCountry}}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+OL) core\+Country\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\hypertarget{interface_place_object_a82afd62e7a54bcf853138961be0bdd4b}{}\label{interface_place_object_a82afd62e7a54bcf853138961be0bdd4b}
+Bool describing if this place is in a core country \index{Place\+Object@{Place\+Object}!country@{country}}
+\index{country@{country}!Place\+Object@{Place\+Object}}
+\subsubsection[{\texorpdfstring{country}{country}}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String$\ast$) country\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [retain]}}\hypertarget{interface_place_object_a51fc9bf5128ad1ae37c7f8520f2f8f4e}{}\label{interface_place_object_a51fc9bf5128ad1ae37c7f8520f2f8f4e}
+Name of the country this plae belongs to \index{Place\+Object@{Place\+Object}!country\+Code@{country\+Code}}
+\index{country\+Code@{country\+Code}!Place\+Object@{Place\+Object}}
+\subsubsection[{\texorpdfstring{country\+Code}{countryCode}}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String$\ast$) country\+Code\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [retain]}}\hypertarget{interface_place_object_ae97cadb12de29e5d532e7ebb17981cd0}{}\label{interface_place_object_ae97cadb12de29e5d532e7ebb17981cd0}
+The accepeted country code for the country the place belongs to \index{Place\+Object@{Place\+Object}!country\+ID@{country\+ID}}
+\index{country\+ID@{country\+ID}!Place\+Object@{Place\+Object}}
+\subsubsection[{\texorpdfstring{country\+ID}{countryID}}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Number$\ast$) country\+ID\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [retain]}}\hypertarget{interface_place_object_a2c310e19df1c333e69ea623a07803159}{}\label{interface_place_object_a2c310e19df1c333e69ea623a07803159}
+Country\+ID for the country this place belongs to \index{Place\+Object@{Place\+Object}!distance@{distance}}
+\index{distance@{distance}!Place\+Object@{Place\+Object}}
+\subsubsection[{\texorpdfstring{distance}{distance}}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Number$\ast$) distance\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [retain]}}\hypertarget{interface_place_object_a913be3e7487cc751bedf051efb200f0b}{}\label{interface_place_object_a913be3e7487cc751bedf051efb200f0b}
+Distance from this place to the users location (computed at run time) \index{Place\+Object@{Place\+Object}!full\+Name@{full\+Name}}
+\index{full\+Name@{full\+Name}!Place\+Object@{Place\+Object}}
+\subsubsection[{\texorpdfstring{full\+Name}{fullName}}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String$\ast$) full\+Name\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [retain]}}\hypertarget{interface_place_object_ad9712fd279caacdc1e6e859c789a8c89}{}\label{interface_place_object_ad9712fd279caacdc1e6e859c789a8c89}
+Full name of the place \index{Place\+Object@{Place\+Object}!geo\+Position@{geo\+Position}}
+\index{geo\+Position@{geo\+Position}!Place\+Object@{Place\+Object}}
+\subsubsection[{\texorpdfstring{geo\+Position}{geoPosition}}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf Location\+Object}$\ast$) geo\+Position\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [retain]}}\hypertarget{interface_place_object_ab64dbbd07e30cb97604bfccb69bb6840}{}\label{interface_place_object_ab64dbbd07e30cb97604bfccb69bb6840}
+Location of this place in latitude and longitude as specified by the \hyperlink{interface_location_object}{Location\+Object} \index{Place\+Object@{Place\+Object}!guid@{guid}}
+\index{guid@{guid}!Place\+Object@{Place\+Object}}
+\subsubsection[{\texorpdfstring{guid}{guid}}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Number$\ast$) guid\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [retain]}}\hypertarget{interface_place_object_af018c73afed3d69e8b4e73399573292b}{}\label{interface_place_object_af018c73afed3d69e8b4e73399573292b}
+Unique guid of a place object \index{Place\+Object@{Place\+Object}!iata\+Airport\+Code@{iata\+Airport\+Code}}
+\index{iata\+Airport\+Code@{iata\+Airport\+Code}!Place\+Object@{Place\+Object}}
+\subsubsection[{\texorpdfstring{iata\+Airport\+Code}{iataAirportCode}}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String$\ast$) iata\+Airport\+Code\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [retain]}}\hypertarget{interface_place_object_a08fa27864c0ab1622fd052775b78359e}{}\label{interface_place_object_a08fa27864c0ab1622fd052775b78359e}
+The airport code as provided by I\+A\+TA if any \index{Place\+Object@{Place\+Object}!in\+Europe@{in\+Europe}}
+\index{in\+Europe@{in\+Europe}!Place\+Object@{Place\+Object}}
+\subsubsection[{\texorpdfstring{in\+Europe}{inEurope}}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+OL) in\+Europe\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\hypertarget{interface_place_object_adaa4d2067142d57960651197be872b6e}{}\label{interface_place_object_adaa4d2067142d57960651197be872b6e}
+Bool stating if this place is in europe \index{Place\+Object@{Place\+Object}!key@{key}}
+\index{key@{key}!Place\+Object@{Place\+Object}}
+\subsubsection[{\texorpdfstring{key}{key}}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String$\ast$) key\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [retain]}}\hypertarget{interface_place_object_a9824d0bfb7028ed1e968ed6efe4614f4}{}\label{interface_place_object_a9824d0bfb7028ed1e968ed6efe4614f4}
+Key describing the place \index{Place\+Object@{Place\+Object}!location\+ID@{location\+ID}}
+\index{location\+ID@{location\+ID}!Place\+Object@{Place\+Object}}
+\subsubsection[{\texorpdfstring{location\+ID}{locationID}}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Number$\ast$) location\+ID\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [retain]}}\hypertarget{interface_place_object_a6e60190f0f556c4cd990769720409262}{}\label{interface_place_object_a6e60190f0f556c4cd990769720409262}
+Location ID of a particular place \index{Place\+Object@{Place\+Object}!name@{name}}
+\index{name@{name}!Place\+Object@{Place\+Object}}
+\subsubsection[{\texorpdfstring{name}{name}}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String$\ast$) name\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [retain]}}\hypertarget{interface_place_object_abf3f3dd0d2d7189755b09df41d332310}{}\label{interface_place_object_abf3f3dd0d2d7189755b09df41d332310}
+Name of the place \index{Place\+Object@{Place\+Object}!names\+In\+Languages@{names\+In\+Languages}}
+\index{names\+In\+Languages@{names\+In\+Languages}!Place\+Object@{Place\+Object}}
+\subsubsection[{\texorpdfstring{names\+In\+Languages}{namesInLanguages}}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Dictionary$\ast$) names\+In\+Languages\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [retain]}}\hypertarget{interface_place_object_a29458bf7d479735b009bb5f3d72b24e5}{}\label{interface_place_object_a29458bf7d479735b009bb5f3d72b24e5}
+Name of this place in other languages \index{Place\+Object@{Place\+Object}!type@{type}}
+\index{type@{type}!Place\+Object@{Place\+Object}}
+\subsubsection[{\texorpdfstring{type}{type}}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String$\ast$) type\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [retain]}}\hypertarget{interface_place_object_a4d1924fc2fb84097f452f47f66199661}{}\label{interface_place_object_a4d1924fc2fb84097f452f47f66199661}
+The type of place this belongs to 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Place\+Object.\+h\item 
+Place\+Object.\+m\end{DoxyCompactItemize}
