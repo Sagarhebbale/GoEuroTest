@@ -9,6 +9,10 @@ Some notes on the application:
 3. This solution works for all iPhone screen sizes and iOS versions greater than 8.3.
 4. The documentation can for the code can be accessed at GOEuroTest/Documentation/html/index.html
 
+How to use:
+1. Clone this repository onto your machine
+2. Build and compile from te GoEuroTest.xcworkspace file
+
 
 Contact me for any more information on the same:
 Email : sagarhebbale89@gmail.com
